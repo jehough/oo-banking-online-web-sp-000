@@ -10,7 +10,7 @@ class Transfer
     @status = 'pending'
   end
   def valid?
-    @sender.valid? && @reciever.valid && @sender.balance > @amount
+    @sender.valid? && @reciever.valid
   end
   def execute_transaction
     if self.valid?
