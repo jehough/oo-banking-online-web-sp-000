@@ -12,4 +12,11 @@ class BankAccount
   def display_balance
     "Your balance is $#{@balance}."
   end
+  def valid?
+    if @balance == 0
+      false
+    elsif !(@status = open)
+      false
+    else
+      true
 end
