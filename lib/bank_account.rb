@@ -19,4 +19,6 @@ class BankAccount
       false
     else
       true
+    end
+  end
 end
